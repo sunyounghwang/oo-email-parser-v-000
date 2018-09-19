@@ -11,6 +11,7 @@ class EmailParser
   end
 
   def parse
-    csv.split(/[\s,]/).delete("")
+    parsed = csv.split(/[\s,]/).delete_if {|e| e == "" }
+    parsed
   end
 end
