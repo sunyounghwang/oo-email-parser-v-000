@@ -6,6 +6,6 @@
 class EmailParser
 
   def parse(csv)
-
+    csv.split(", ")
   end
 end
