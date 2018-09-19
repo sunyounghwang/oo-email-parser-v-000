@@ -11,6 +11,5 @@ class EmailParser
   end
 
   def parse
-    csv.split(", ") || csv.split
-  end
+    csv.include?(",") ? csv.split(", ") : csv.split
 end
