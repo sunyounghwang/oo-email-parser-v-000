@@ -11,6 +11,6 @@ class EmailParser
   end
 
   def parse
-    csv.split(", ").split
+    csv.split(/[,/s]/)
   end
 end
