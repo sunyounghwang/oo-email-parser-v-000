@@ -4,8 +4,13 @@
 # or whitespace (' ').
 
 class EmailParser
+  attr_accessor :csv
 
-  def parse(csv)
+  def initialize(csv)
+    @csv = csv
+  end
+
+  def parse
     csv.split(", ")
   end
 end
