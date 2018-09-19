@@ -5,4 +5,7 @@
 
 class EmailParser
 
+  def parse(CSV)
+
+  end
 end
